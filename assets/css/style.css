@@ -39,8 +39,13 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
+html{
+    font-family: 'Lato';
+}
+
 img{
-    max-width: 800px;
+    /* mudei aqui para poder estilizar o mobile- NAT */
+    max-width: 300px;
 }
 div.flex{
     display: flex;
@@ -61,7 +66,88 @@ div.container{
     margin:0 auto;
 }
 /* GERAL */
-  
+
+/* -----------------------contatos------------------------- */
+.secaoContato .flex{
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #e6e0dab6;
+
+}
+
+.secaoContato {
+    margin: 0;
+    color: #303030;
+    
+}
+
+.flex-col form {
+    position: relative;
+}
+label{
+    display: none;
+}
+.flex-col form div{
+    margin-top: 10px;
+}
+.flex-col form div textarea, .flex-col form div input{
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid rgba(99, 98, 91, 0.938);
+
+    box-shadow: inset 0 0 5px rgba(99, 98, 91, 0.219);
+    /* border: none; */
+    border-radius: 2px;
+    /* box-shadow: inset 0 0 1em gold;} */
+}
+.flex-col form div textarea{
+    padding-bottom: 60px;
+}
+
+
+
+input[type="submit"]{
+    margin-top: 20px;
+    text-align: center;
+    border: none;
+    align-items: flex-end;
+    background-color: #fff;
+
+    border-radius: 2px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+}
+
+
+.flex-col{
+    padding: 20px 50px;
+}
+
+.flex-col h2{
+    padding: 70px 50px 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.flex-col input{
+    border: blue;
+    outline: none;
+}
+
+.flex-col ul li {
+    margin: 10px;
+}
+.flex-col ul li a{
+    text-decoration: none;
+    color: #303030;
+}
+
+
 /* HTML */
 html{}
 /* HTML */
@@ -97,7 +183,12 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px) {
+        .secaoCalendar ul{
+            display: flex;
+            flex-flow: column wrap;
+        }
+    }
   
     @media screen and (min-width: 800px) {}
 /* MEDIA QUERIES */
